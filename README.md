@@ -9,4 +9,4 @@ MERN stack project for Web Development Course (Spring 2023)
 4. Navigate to the frontend directory
 5. Run npm i
 6. Run npm start
-Note, the mongodb connect string is not included in this public repo for privacy reasons, so accordingly the backend will not function as is
+* Note, the mongodb connect string is not included in this public repo for privacy reasons, so accordingly the backend will not function as is
