@@ -1,0 +1,382 @@
+
+/*   ----- Imports  -----  */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url(//fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Ysabeau:wght@200&display=swap);
+
+/*   ----- Variables  -----  */
+:root {
+  --hotRed: #D92B2B;
+  --peachRed: #A65149;
+  --veryLightGrey: #D9D1CC;
+  --greyish: #8C827D;
+  --lightishGreen: #D6D989;
+  --darkRed: #590202;
+  --veryDarkRed: #400101;
+  --hottishREd: #A61205;
+  --lighterBlack: #222226;
+  --transparentRed: rgba(253, 28, 28, 0.37);
+  --custom-embellishment-name:;
+}
+
+
+body {       
+  background: url(./images/Yutoku-Inari-shrine-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;  
+  background-color:;
+  background-image:;
+  color:--lighterBlack;
+  font-family: 'Ysabeau', sans-serif;
+  margin:3%;
+  padding:3%;
+  max-width: 2500px;
+}
+
+
+
+/*  ----- Page layout blocks -----  */
+header {
+  font-family: 'Bruno Ace SC', cursive;
+  border:10px solid var(--lighterBlack);
+  color: var(--veryLightGrey);
+  background-color: var(--transparentRed);
+  margin:1%;
+  padding:1%;
+  text-align: center;
+  font-weight: bold; 
+}
+main {}
+section {
+  background-color: var(--hotRed);
+  border:5px solid var(--lighterBlack);
+  margin:2%;
+  padding:2%;
+  border-radius: 5px;
+  border-color: var(--veryDarkRed);
+  text-align: center;
+  color: var(--veryLightGrey);
+}
+article {
+      background-color:var(--peachRed); 
+      margin:2%;
+      padding:2%;
+      text-align: center;
+      border-color: var(--greyish);
+      border-radius: 2px;
+}
+    #topic1 {}
+    #topic2 {}
+div {}
+aside {}
+footer {
+  background-color: var(--transparentRed);
+  border:2px solid var(--lightishGreen);
+  margin:1%;
+  padding:1%;
+  color: var(--veryLightGrey);
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--peachRed);
+  color: var(--lighterBlack);
+}
+.gallery figure{
+  margin:1%;
+  padding:1%;
+}
+.gallery figcaption{
+  margin:0.1%;
+  padding:0.1%;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;  
+}
+
+.gallery img{
+  border-radius: 5%;
+  margin:1.5%;
+  padding:1.5%;
+  vertical-align: top;
+}
+
+#orderHeadP {
+background-color: var(--hotRed);
+border:5px solid var(--lighterBlack);
+margin:2%;
+padding:2%;
+border-radius: 5px;
+border-color: var(--veryDarkRed);
+text-align: center;
+color: var(--veryLightGrey);
+font-weight: bold;  
+font-size: large;
+}
+
+#staffHeadP {
+background-color: var(--hotRed);
+border:5px solid var(--lighterBlack);
+margin:2%;
+padding:2%;
+border-radius: 5px;
+border-color: var(--veryDarkRed);
+text-align: center;
+color: var(--veryLightGrey);
+font-weight: bold;  
+font-size: large;
+}
+
+#formReturn {
+background-color: var(--hotRed);
+border:5px solid var(--lighterBlack);
+margin:2%;
+padding:2%;
+border-radius: 5px;
+border-color: var(--veryDarkRed);
+text-align: center;
+color: var(--veryLightGrey);
+font-weight: bold;  
+font-size: large;
+}
+
+
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- .  */
+nav {
+  text-align: center;
+  text-decoration: none;
+}
+nav a {
+  background-color: var(--darkRed);
+  border: 5px solid rgba(0, 0, 0, 0.322);
+  border-radius: 30px 30px 30px 30px; 
+  color: var(--veryLightGrey);
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 6px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: none;
+  background-color:var(--veryLightGrey);
+  color: var(--lighterBlack);
+}
+
+.articleNav {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+.articleNav a {
+  background-color: var(--lightishGreen);
+  border: 5px solid rgba(0, 0, 0, 0.322);
+  border-radius: 4px 4px 4px 4px; 
+  color: var(--lighterBlack);
+  font-size: 1em;
+  margin-right: 1px;
+  padding: 1px;
+  text-decoration: none;
+}
+.articleNav a:hover {
+  text-decoration: none;
+  background-color:var(--veryLightGrey);
+  color: var(--lighterBlack);
+}
+
+
+#staffTable{
+  background-color:var(--peachRed); 
+  color: var(--hottishREd);
+  margin:2%;
+  padding:2%;
+  text-align: center;
+  border-color: var(--greyish);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#orderTable{
+  background-color:var(--peachRed); 
+  color: var(--hottishREd);
+  margin:2%;
+  padding:2%;
+  text-align: center;
+  border-color: var(--greyish);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+}
+
+caption {
+  font-weight: bold;  
+  font-size: x-large;
+  color: var(--hottishREd);
+  border: 5px solid var(--lighterBlack);
+}
+
+thead {
+  font-weight: bold;  
+  font-size: large;
+  color: var(--peachRed);
+  
+}
+
+#staffTableHead{
+  background-color: var(--hotRed);
+  border:5px solid var(--lighterBlack);
+  margin:2%;
+  padding:2%;
+  border-radius: 5px;
+  border-color: var(--veryDarkRed);
+  text-align: center;
+  color: var(--veryLightGrey);
+  font-weight: bold;  
+  font-size: large;
+}
+
+tbody {
+  font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+  background-color:var(--greyish);
+  }
+
+tr:nth-child(odd) {
+  background-color:var(--lightishGreen);
+  color: var(--hottishREd);
+  }
+
+th {
+  padding: 15px;
+  border: 3px solid var(--lighterBlack);
+}
+td {
+  padding: 15px;
+  border: 1px solid var(--lighterBlack);
+}
+
+
+.orderTableQuantity { 
+  display:flex; 
+  justify-content:space-between; 
+  margin:0 auto; 
+  width:110px; 
+}
+
+/*  ----- Form ----- */
+form, button, input, select, textarea {
+  font-family: 'Ysabeau', sans-serif;
+}
+fieldset {
+  border: 3px, solid, var(--veryLightGrey);
+  background-color: #8C827D;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-bottom: 5px;
+  text-align: left;
+}
+  legend {
+    background-color: #A65149;
+    border: 5px, solid #D6D989;
+    font-size: 135%;
+    padding: 0.5%;
+  }
+label {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 110%;
+}
+#firstname {
+  text-align: center;
+  display: block;
+}
+#middlenames {
+  text-align: center;
+  display: block;
+}
+#lastname {
+  text-align: center;
+  display: block;
+}
+#email {
+  text-align: center;
+  display: block;
+}
+#otherselect {
+  text-align: center;
+  display: block;
+}
+#contactheadp {
+  text-align: center;
+  font-size: 120%;
+}
+  button {
+    padding: 1%;
+    font-size: 101%;
+  }
+  input {
+    padding: 3%;
+    font-size: 130%;
+    text-align: center;
+  }
+
+  select {
+    padding: 0.2%;
+    font-size: 110%;
+  }
+
+  textarea {
+    padding: 1%;
+    font-size: 130%;
+  }
+
+  :focus{
+    background-color:var(--lightishGreen);
+}
+
+:required {
+  border:3px solid var(--peachRed);
+  color: var(--darkRed);
+}
+
+label.required:after {
+content:" *";
+color:var(--darkRed);
+}
+
+label, input {
+display: flex;
+flex-direction: column;
+}
+
+
+
+@keyframes App-logo {}
+
+
+@media all and (min-width: 600px) {}
+
+
+@media all and (min-width: 1080px) {}
+
+
+@media print {}
